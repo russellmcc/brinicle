@@ -5,6 +5,13 @@ Probably not without serious investment - this is just a proof of concept framew
 * Why do something like this?
 This was done for a few reasons - first, so that I could personally learn more about the technologies involved, and also to dream about a more modern way to write audio software. Currently the vast majority of audio plug-ins are written in C++, using user-interface libraries that are quite a bit older than react-native.  Is the reactive approach a better one for writing audio software?  Is rust a better language for signal processing than C++?  The idea of creating this proof-of-concept was to begin to answer these questions.
 * How do I create a brinicle project?
+** Prerequisites
+ - [ ] node.js
+ - [ ] rust
+ - [ ] rust aarch64-apple-ios toolchain (~rustup target add aarch64-apple-ios~)
+ - [ ] rust x86_64-apple-ios toolchain (~rustup target add x86_64-apple-ios~)
+ - [ ] xcode 10
+** Starting a project
 Brinicle comes with scaffolding script called ~create-brinicle>~.  You can create your brinicle project by calling ~npx create-brinicle <folder>~.  You will be prompted for some relevant information.
 
 Then, to build your project, open the xcode project in the ~mac~ folder.  To get started, build the target called ~<project name>TestApp~.  This will build a stand-alone application where you can test your effect before running a plug-in build.  *It is critical that you disable parallelize builds* from the scheme options in xcode - this is required to build any react-native project due to some configuration choices made upstream.  Sometimes the first build will fail building underlying react libraries; if this happens please try again and it may succeed next time.
