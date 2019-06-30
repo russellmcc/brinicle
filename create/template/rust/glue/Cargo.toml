@@ -1,0 +1,18 @@
+[package]
+name = "$PROJ_NAME$_glue"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]
+libc = "*"
+smallvec = "*"
+
+[dependencies.brinicle_glue]
+path = "../../../icicle-basics/rust/glue"
+
+[dependencies.$PROJ_NAME$_kernel]
+path = "../kernel"
+
+[lib]
+crate-type = ["staticlib"]
+name = "$PROJ_NAME$_glue"

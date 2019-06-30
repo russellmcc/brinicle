@@ -1,0 +1,11 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "react-native": "react-native-macos",
+        "lottie-react-native": "lottie-react-native-macos"
+      }
+    }]
+  ]
+}

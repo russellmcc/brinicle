@@ -1,0 +1,13 @@
+*.xcodeproj/xcuserdata
+project.xcworkspace
+**/target
+**/Cargo.lock
+node_modules
+*.xcscheme
+xcuserdata
+/mac/$PROJ_NAME$.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/ios/$PROJ_NAME$.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+.DS_Store
+mac/bundle
+
+

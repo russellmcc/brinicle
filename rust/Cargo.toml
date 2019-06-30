@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "glue",
+    "deinterleaved",
+    "kernel",
+    "midi",
+    "pitch",
+    "voices",
+]

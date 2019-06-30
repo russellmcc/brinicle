@@ -1,0 +1,25 @@
+{
+  "name": "minau-mac",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native-macos/local-cli/cli.js start",
+    "bundle": "mkdir -p bundle; node node_modules/react-native-macos/local-cli/cli.js bundle --entry-file index.macos.js --platform macos --dev false --bundle-output bundle/main.jsbundle --assets-dest bundle"
+  },
+  "dependencies": {
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-react-native": "^4.0.1",
+    "lottie-ios": "^2.5.0",
+    "lottie-react-native-macos": "russellmcc/lottie-react-native-macos#master",
+    "react": "^16.2.0",
+    "react-native-macos": "russellmcc/react-native-macos#handle-view-coordinates"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.15.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-react-native": "^2.2.1",
+    "react-native-macos-cli": "^2.0.1"
+  }
+}

@@ -1,0 +1,1664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF1A34D82264F29900B66DC1 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AE8E1E62505A00B0310F /* libReact.a */; };
+		FF1A34D92264F2A600B66DC1 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AEE71E6251B800B0310F /* libRCTWebSocket.a */; };
+		FF1A34DA2264F37B00B66DC1 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AEE11E62519F00B0310F /* libRCTText.a */; };
+		FF1A34DB2264F41300B66DC1 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF33C4E224C5F070040E90A /* libcxxreact.a */; };
+		FF1A34DC2264F4DB00B66DC1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AEF31E6251F900B0310F /* libRCTNetwork.a */; };
+		FF5AB2BC22638C6C007632D6 /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5AB2B9226389B8007632D6 /* libLottieReactNative.a */; };
+		FF5F09E92252EED500BFDDD1 /* drumLoop.caf in Resources */ = {isa = PBXBuildFile; fileRef = FF5F09E82252EED500BFDDD1 /* drumLoop.caf */; };
+		FF84005822639EED0046F2EF /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD266FC226305940013BD74 /* libLottie.a */; };
+		FF8FC8E61E63866E002460FE /* $PROJ_NAME$Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */; };
+		FF8FC8E81E638693002460FE /* $PROJ_NAME$Base.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF8FC8F01E638B6F002460FE /* $PROJ_NAME$AU.component in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF8FC8DD1E6385E8002460FE /* $PROJ_NAME$AU.component */; };
+		FF8FC8F61E639F3E002460FE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF301E62548400B0310F /* AudioToolbox.framework */; };
+		FF8FC8F81E63CA91002460FE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8FC8F71E63CA91002460FE /* CoreFoundation.framework */; };
+		FF9274C722A0DA0B005BC074 /* libbrinicle_AUv2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9274A722A0D9F7005BC074 /* libbrinicle_AUv2.a */; };
+		FF9274C822A0DA0B005BC074 /* libbrinicle_AUv3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9274A922A0D9F7005BC074 /* libbrinicle_AUv3.a */; };
+		FF9274C922A0DA0B005BC074 /* libbrinicle_glue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9274A122A0D9F7005BC074 /* libbrinicle_glue.a */; };
+		FF9274CA22A0DA0B005BC074 /* libbrinicle_kernel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF92749F22A0D9F7005BC074 /* libbrinicle_kernel.a */; };
+		FF9274CB22A0DA0B005BC074 /* libbrinicle_react.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9274A522A0D9F7005BC074 /* libbrinicle_react.a */; };
+		FF9274CC22A0DA0B005BC074 /* libbrinicle_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9274A322A0D9F7005BC074 /* libbrinicle_thread.a */; };
+		FF99AF0A1E6253DF00B0310F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF99AF091E6253DF00B0310F /* AppDelegate.m */; };
+		FF99AF0D1E6253DF00B0310F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF99AF0C1E6253DF00B0310F /* main.m */; };
+		FF99AF101E6253DF00B0310F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF99AF0F1E6253DF00B0310F /* ViewController.mm */; };
+		FF99AF121E6253DF00B0310F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF99AF111E6253DF00B0310F /* Assets.xcassets */; };
+		FF99AF151E6253DF00B0310F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF99AF131E6253DF00B0310F /* Main.storyboard */; };
+		FF99AF261E6253F300B0310F /* $PROJ_NAME$Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */; };
+		FF99AF271E6253F300B0310F /* $PROJ_NAME$Base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF99AF2D1E62540C00B0310F /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF99AF2C1E62540C00B0310F /* dummy.cpp */; };
+		FF99AF331E62548A00B0310F /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF321E62548A00B0310F /* CoreAudioKit.framework */; };
+		FF99AF571E62717C00B0310F /* playEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99AF561E62717C00B0310F /* playEngine.swift */; };
+		FFD26712226312E40013BD74 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = FFD26711226312E40013BD74 /* bundle */; };
+		FFD981651E6275B5004F792A /* $PROJ_NAME$_AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF99AF591E62748E00B0310F /* $PROJ_NAME$_AudioUnitViewController.xib */; };
+		FFDADC891E74EC6100B8F23B /* v2exports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDADC881E74EC6100B8F23B /* v2exports.cpp */; };
+		FFE713E52291217400877426 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF99AF301E62548400B0310F /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF224A9D2291AFD1005D33D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE831E62503000B0310F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF99AEFC1E62526B00B0310F;
+			remoteInfo = "Rust Core";
+		};
+		FF5AB2B8226389B8007632D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
+			remoteInfo = LottieReactNative;
+		};
+		FF5C86B22262DE57001B5B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62CA59B81E3C173B002D7188;
+			remoteInfo = Lottie_iOS;
+		};
+		FF5C86B42262DE57001B5B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAE1F7E61E428CBE002E0974;
+			remoteInfo = Lottie_macOS;
+		};
+		FF5C86B62262DE57001B5B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C5379761FB471D100C1BC65;
+			remoteInfo = Lottie_tvOS;
+		};
+		FF5C86B82262DE57001B5B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84FE12EF1E4C1485009B157C;
+			remoteInfo = LottieLibraryIOS;
+		};
+		FF8FC8E31E638659002460FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE831E62503000B0310F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF99AF1E1E6253F300B0310F;
+			remoteInfo = $PROJ_NAME$BaseF;
+		};
+		FF92749E22A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE71312229111ED00877426;
+			remoteInfo = brinicle_kernel;
+		};
+		FF9274A022A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE712E022910DE900877426;
+			remoteInfo = brinicle_glue;
+		};
+		FF9274A222A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE7134A229114B500877426;
+			remoteInfo = brinicle_thread;
+		};
+		FF9274A422A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE713752291171E00877426;
+			remoteInfo = brinicle_react;
+		};
+		FF9274A622A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE713952291196F00877426;
+			remoteInfo = brinicle_AUv2;
+		};
+		FF9274A822A0D9F7005BC074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE713B522911A8100877426;
+			remoteInfo = brinicle_AUv3;
+		};
+		FF99AE8D1E62505A00B0310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		FF99AEE01E62519F00B0310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEDC1E62519F00B0310F /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		FF99AEE61E6251B800B0310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		FF99AEF21E6251F900B0310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEEE1E6251F900B0310F /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		FF99AF241E6253F300B0310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE831E62503000B0310F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF99AF1E1E6253F300B0310F;
+			remoteInfo = $PROJ_NAME$BaseF;
+		};
+		FFD266FB226305940013BD74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6445B0D5207E0D4D00D84F6A;
+			remoteInfo = LottieLibraryMacOS;
+		};
+		FFE713D622911C8900877426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		FFF33C2A224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEEE1E6251F900B0310F /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		FFF33C2D224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEDC1E62519F00B0310F /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		FFF33C32224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		FFF33C34224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D001F3B181A0099AA32;
+			remoteInfo = fishhook;
+		};
+		FFF33C36224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
+			remoteInfo = "fishhook-tvOS";
+		};
+		FFF33C47224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		FFF33C49224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		FFF33C4B224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		FFF33C4D224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		FFF33C4F224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		FFF33C51224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		FFF33C53224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+		FFF33C55224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
+			remoteInfo = jsinspector;
+		};
+		FFF33C57224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
+			remoteInfo = "jsinspector-tvOS";
+		};
+		FFF33C59224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		FFF33C5B224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		FFF33C5D224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		FFF33C5F224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
+		FFF33C61224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
+			remoteInfo = privatedata;
+		};
+		FFF33C63224C5F070040E90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
+			remoteInfo = "privatedata-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF224B20229254C5005D33D4 /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8FC8E71E638687002460FE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF8FC8E81E638693002460FE /* $PROJ_NAME$Base.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8FC8EF1E638B56002460FE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(HOME)/Library/Audio/Plug-Ins/Components";
+			dstSubfolderSpec = 0;
+			files = (
+				FF8FC8F01E638B6F002460FE /* $PROJ_NAME$AU.component in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF2B1E6253F300B0310F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF99AF271E6253F300B0310F /* $PROJ_NAME$Base.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF4C1E62689200B0310F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../../lottie-react-native-macos/src/macos/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
+		FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
+		FF5F09E82252EED500BFDDD1 /* drumLoop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = drumLoop.caf; path = ../resources/drumLoop.caf; sourceTree = "<group>"; };
+		FF8FC8DD1E6385E8002460FE /* $PROJ_NAME$AU.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = $PROJ_NAME$AU.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8FC8DF1E6385E8002460FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8FC8EE1E638910002460FE /* $PROJ_NAME$v2.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = $PROJ_NAME$v2.exp; sourceTree = "<group>"; };
+		FF8FC8F41E639004002460FE /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		FF8FC8F71E63CA91002460FE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = brinicle.xcodeproj; path = node_modules/brinicle/brinicle.xcodeproj; sourceTree = "<group>"; };
+		FF99AE891E62505A00B0310F /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native-macos/React/React.xcodeproj"; sourceTree = "<group>"; };
+		FF99AEDC1E62519F00B0310F /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native-macos/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "node_modules/react-native-macos/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		FF99AEEE1E6251F900B0310F /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "node_modules/react-native-macos/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		FF99AF061E6253DF00B0310F /* $PROJ_NAME$TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = $PROJ_NAME$TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF99AF081E6253DF00B0310F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF99AF091E6253DF00B0310F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF99AF0C1E6253DF00B0310F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF99AF0E1E6253DF00B0310F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF99AF0F1E6253DF00B0310F /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FF99AF111E6253DF00B0310F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF99AF141E6253DF00B0310F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF99AF161E6253DF00B0310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = $PROJ_NAME$Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF99AF221E6253F300B0310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF99AF2C1E62540C00B0310F /* dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = ../../dummy/dummy.cpp; sourceTree = "<group>"; };
+		FF99AF301E62548400B0310F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF99AF321E62548A00B0310F /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		FF99AF561E62717C00B0310F /* playEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playEngine.swift; sourceTree = "<group>"; };
+		FF99AF581E6273E900B0310F /* $PROJ_NAME$TestApp-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "$PROJ_NAME$TestApp-Bridging-header.h"; sourceTree = "<group>"; };
+		FF99AF591E62748E00B0310F /* $PROJ_NAME$_AudioUnitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = $PROJ_NAME$_AudioUnitViewController.xib; sourceTree = "<group>"; };
+		FFD26711226312E40013BD74 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
+		FFDADC881E74EC6100B8F23B /* v2exports.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = v2exports.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF8FC8DA1E6385E8002460FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8FC8F81E63CA91002460FE /* CoreFoundation.framework in Frameworks */,
+				FF8FC8F61E639F3E002460FE /* AudioToolbox.framework in Frameworks */,
+				FF8FC8E61E63866E002460FE /* $PROJ_NAME$Base.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF031E6253DF00B0310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF99AF261E6253F300B0310F /* $PROJ_NAME$Base.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF1B1E6253F300B0310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE713E52291217400877426 /* AudioToolbox.framework in Frameworks */,
+				FF1A34D82264F29900B66DC1 /* libReact.a in Frameworks */,
+				FF1A34DB2264F41300B66DC1 /* libcxxreact.a in Frameworks */,
+				FF1A34D92264F2A600B66DC1 /* libRCTWebSocket.a in Frameworks */,
+				FF1A34DC2264F4DB00B66DC1 /* libRCTNetwork.a in Frameworks */,
+				FF1A34DA2264F37B00B66DC1 /* libRCTText.a in Frameworks */,
+				FF84005822639EED0046F2EF /* libLottie.a in Frameworks */,
+				FF5AB2BC22638C6C007632D6 /* libLottieReactNative.a in Frameworks */,
+				FF99AF331E62548A00B0310F /* CoreAudioKit.framework in Frameworks */,
+				FF9274C722A0DA0B005BC074 /* libbrinicle_AUv2.a in Frameworks */,
+				FF9274C822A0DA0B005BC074 /* libbrinicle_AUv3.a in Frameworks */,
+				FF9274C922A0DA0B005BC074 /* libbrinicle_glue.a in Frameworks */,
+				FF9274CA22A0DA0B005BC074 /* libbrinicle_kernel.a in Frameworks */,
+				FF9274CB22A0DA0B005BC074 /* libbrinicle_react.a in Frameworks */,
+				FF9274CC22A0DA0B005BC074 /* libbrinicle_thread.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5AB2B5226389B8007632D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5AB2B9226389B8007632D6 /* libLottieReactNative.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF5C86AC2262DE57001B5B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5C86B32262DE57001B5B05 /* Lottie.framework */,
+				FF5C86B52262DE57001B5B05 /* Lottie.framework */,
+				FF5C86B72262DE57001B5B05 /* Lottie.framework */,
+				FF5C86B92262DE57001B5B05 /* libLottie.a */,
+				FFD266FC226305940013BD74 /* libLottie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8FC8DE1E6385E8002460FE /* $PROJ_NAME$AUv2 */ = {
+			isa = PBXGroup;
+			children = (
+				FF8FC8DF1E6385E8002460FE /* Info.plist */,
+				FFDADC881E74EC6100B8F23B /* v2exports.cpp */,
+				FF8FC8EE1E638910002460FE /* $PROJ_NAME$v2.exp */,
+			);
+			path = $PROJ_NAME$AUv2;
+			sourceTree = "<group>";
+		};
+		FF92749622A0D9F7005BC074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF92749F22A0D9F7005BC074 /* libbrinicle_kernel.a */,
+				FF9274A122A0D9F7005BC074 /* libbrinicle_glue.a */,
+				FF9274A322A0D9F7005BC074 /* libbrinicle_thread.a */,
+				FF9274A522A0D9F7005BC074 /* libbrinicle_react.a */,
+				FF9274A722A0D9F7005BC074 /* libbrinicle_AUv2.a */,
+				FF9274A922A0D9F7005BC074 /* libbrinicle_AUv3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AE821E62503000B0310F = {
+			isa = PBXGroup;
+			children = (
+				FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */,
+				FFD26711226312E40013BD74 /* bundle */,
+				FF5F09E82252EED500BFDDD1 /* drumLoop.caf */,
+				FF99AF071E6253DF00B0310F /* $PROJ_NAME$TestApp */,
+				FF99AF201E6253F300B0310F /* $PROJ_NAME$Base */,
+				FF8FC8DE1E6385E8002460FE /* $PROJ_NAME$AUv2 */,
+				FF99AE8F1E62506600B0310F /* React Native Mac */,
+				FF99AE961E6250A900B0310F /* Products */,
+				FF99AF2F1E62548400B0310F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF99AE8A1E62505A00B0310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AE8E1E62505A00B0310F /* libReact.a */,
+				FFF33C48224C5F070040E90A /* libReact.a */,
+				FFF33C4A224C5F070040E90A /* libyoga.a */,
+				FFF33C4C224C5F070040E90A /* libyoga.a */,
+				FFF33C4E224C5F070040E90A /* libcxxreact.a */,
+				FFF33C50224C5F070040E90A /* libcxxreact.a */,
+				FFF33C52224C5F070040E90A /* libjschelpers.a */,
+				FFF33C54224C5F070040E90A /* libjschelpers.a */,
+				FFF33C56224C5F070040E90A /* libjsinspector.a */,
+				FFF33C58224C5F070040E90A /* libjsinspector-tvOS.a */,
+				FFF33C5A224C5F070040E90A /* libthird-party.a */,
+				FFF33C5C224C5F070040E90A /* libthird-party.a */,
+				FFF33C5E224C5F070040E90A /* libdouble-conversion.a */,
+				FFF33C60224C5F070040E90A /* libdouble-conversion.a */,
+				FFF33C62224C5F070040E90A /* libprivatedata.a */,
+				FFF33C64224C5F070040E90A /* libprivatedata-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AE8F1E62506600B0310F /* React Native Mac */ = {
+			isa = PBXGroup;
+			children = (
+				FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */,
+				FF99AEEE1E6251F900B0310F /* RCTNetwork.xcodeproj */,
+				FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */,
+				FF99AEDC1E62519F00B0310F /* RCTText.xcodeproj */,
+				FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */,
+				FF99AE891E62505A00B0310F /* React.xcodeproj */,
+			);
+			name = "React Native Mac";
+			sourceTree = "<group>";
+		};
+		FF99AE961E6250A900B0310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AF061E6253DF00B0310F /* $PROJ_NAME$TestApp.app */,
+				FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */,
+				FF8FC8DD1E6385E8002460FE /* $PROJ_NAME$AU.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AEDD1E62519F00B0310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AEE11E62519F00B0310F /* libRCTText.a */,
+				FFF33C2E224C5F070040E90A /* libRCTText-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AEE31E6251B800B0310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AEE71E6251B800B0310F /* libRCTWebSocket.a */,
+				FFF33C33224C5F070040E90A /* libRCTWebSocket-tvOS.a */,
+				FFF33C35224C5F070040E90A /* libfishhook.a */,
+				FFF33C37224C5F070040E90A /* libfishhook-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AEEF1E6251F900B0310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AEF31E6251F900B0310F /* libRCTNetwork.a */,
+				FFF33C2B224C5F070040E90A /* libRCTNetwork-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF99AF071E6253DF00B0310F /* $PROJ_NAME$TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AF561E62717C00B0310F /* playEngine.swift */,
+				FF99AF081E6253DF00B0310F /* AppDelegate.h */,
+				FF99AF091E6253DF00B0310F /* AppDelegate.m */,
+				FF99AF0E1E6253DF00B0310F /* ViewController.h */,
+				FF99AF0F1E6253DF00B0310F /* ViewController.mm */,
+				FF99AF111E6253DF00B0310F /* Assets.xcassets */,
+				FF99AF131E6253DF00B0310F /* Main.storyboard */,
+				FF99AF161E6253DF00B0310F /* Info.plist */,
+				FF99AF0B1E6253DF00B0310F /* Supporting Files */,
+				FF99AF581E6273E900B0310F /* $PROJ_NAME$TestApp-Bridging-header.h */,
+			);
+			path = $PROJ_NAME$TestApp;
+			sourceTree = "<group>";
+		};
+		FF99AF0B1E6253DF00B0310F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AF0C1E6253DF00B0310F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF99AF201E6253F300B0310F /* $PROJ_NAME$Base */ = {
+			isa = PBXGroup;
+			children = (
+				FF99AF2C1E62540C00B0310F /* dummy.cpp */,
+				FF99AF221E6253F300B0310F /* Info.plist */,
+				FF99AF591E62748E00B0310F /* $PROJ_NAME$_AudioUnitViewController.xib */,
+			);
+			path = $PROJ_NAME$Base;
+			sourceTree = "<group>";
+		};
+		FF99AF2F1E62548400B0310F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF8FC8F71E63CA91002460FE /* CoreFoundation.framework */,
+				FF8FC8F41E639004002460FE /* CoreServices.framework */,
+				FF99AF321E62548A00B0310F /* CoreAudioKit.framework */,
+				FF99AF301E62548400B0310F /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		FF99AEFC1E62526B00B0310F /* $PROJ_NAME$Rust */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(CONFIGURATION)";
+			buildConfigurationList = FF99AEFD1E62526B00B0310F /* Build configuration list for PBXLegacyTarget "$PROJ_NAME$Rust" */;
+			buildPhases = (
+			);
+			buildToolPath = ./build_rust.sh;
+			buildWorkingDirectory = "$(PROJECT_DIR)/..";
+			dependencies = (
+			);
+			name = $PROJ_NAME$Rust;
+			passBuildSettingsInEnvironment = 1;
+			productName = "Rust Core";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		FF8FC8DC1E6385E8002460FE /* $PROJ_NAME$AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8FC8E01E6385E8002460FE /* Build configuration list for PBXNativeTarget "$PROJ_NAME$AU" */;
+			buildPhases = (
+				FF8FC8D91E6385E8002460FE /* Sources */,
+				FF8FC8DA1E6385E8002460FE /* Frameworks */,
+				FF8FC8E71E638687002460FE /* CopyFiles */,
+				FF8FC8EF1E638B56002460FE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8FC8E41E638659002460FE /* PBXTargetDependency */,
+			);
+			name = $PROJ_NAME$AU;
+			productName = $PROJ_NAME$AUv2;
+			productReference = FF8FC8DD1E6385E8002460FE /* $PROJ_NAME$AU.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FF99AF051E6253DF00B0310F /* $PROJ_NAME$TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF99AF171E6253DF00B0310F /* Build configuration list for PBXNativeTarget "$PROJ_NAME$TestApp" */;
+			buildPhases = (
+				FF99AF021E6253DF00B0310F /* Sources */,
+				FF99AF031E6253DF00B0310F /* Frameworks */,
+				FF99AF041E6253DF00B0310F /* Resources */,
+				FF99AF2B1E6253F300B0310F /* Embed Frameworks */,
+				FF99AF4C1E62689200B0310F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF99AF251E6253F300B0310F /* PBXTargetDependency */,
+			);
+			name = $PROJ_NAME$TestApp;
+			productName = $PROJ_NAME$;
+			productReference = FF99AF061E6253DF00B0310F /* $PROJ_NAME$TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF99AF1E1E6253F300B0310F /* $PROJ_NAME$Base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF99AF281E6253F300B0310F /* Build configuration list for PBXNativeTarget "$PROJ_NAME$Base" */;
+			buildPhases = (
+				FF224B20229254C5005D33D4 /* Copy Headers */,
+				FF99AF1A1E6253F300B0310F /* Sources */,
+				FF99AF1B1E6253F300B0310F /* Frameworks */,
+				FFD26713226313ED0013BD74 /* Run Script */,
+				FF99AF1D1E6253F300B0310F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF224A9E2291AFD1005D33D4 /* PBXTargetDependency */,
+				FFE713D722911C8900877426 /* PBXTargetDependency */,
+			);
+			name = $PROJ_NAME$Base;
+			productName = $PROJ_NAME$BaseF;
+			productReference = FF99AF1F1E6253F300B0310F /* $PROJ_NAME$Base.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF99AE831E62503000B0310F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					FF8FC8DC1E6385E8002460FE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FF99AEFC1E62526B00B0310F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FF99AF051E6253DF00B0310F = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					FF99AF1E1E6253F300B0310F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF99AE861E62503000B0310F /* Build configuration list for PBXProject "$PROJ_NAME$" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = FF99AE821E62503000B0310F;
+			productRefGroup = FF99AE961E6250A900B0310F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF92749622A0D9F7005BC074 /* Products */;
+					ProjectRef = FF92749522A0D9F7005BC074 /* brinicle.xcodeproj */;
+				},
+				{
+					ProductGroup = FF5C86AC2262DE57001B5B05 /* Products */;
+					ProjectRef = FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */;
+				},
+				{
+					ProductGroup = FF5AB2B5226389B8007632D6 /* Products */;
+					ProjectRef = FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */;
+				},
+				{
+					ProductGroup = FF99AEEF1E6251F900B0310F /* Products */;
+					ProjectRef = FF99AEEE1E6251F900B0310F /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = FF99AEDD1E62519F00B0310F /* Products */;
+					ProjectRef = FF99AEDC1E62519F00B0310F /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = FF99AEE31E6251B800B0310F /* Products */;
+					ProjectRef = FF99AEE21E6251B800B0310F /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = FF99AE8A1E62505A00B0310F /* Products */;
+					ProjectRef = FF99AE891E62505A00B0310F /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FF99AF1E1E6253F300B0310F /* $PROJ_NAME$Base */,
+				FF99AEFC1E62526B00B0310F /* $PROJ_NAME$Rust */,
+				FF99AF051E6253DF00B0310F /* $PROJ_NAME$TestApp */,
+				FF8FC8DC1E6385E8002460FE /* $PROJ_NAME$AU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF5AB2B9226389B8007632D6 /* libLottieReactNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLottieReactNative.a;
+			remoteRef = FF5AB2B8226389B8007632D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF5C86B32262DE57001B5B05 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = FF5C86B22262DE57001B5B05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF5C86B52262DE57001B5B05 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = FF5C86B42262DE57001B5B05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF5C86B72262DE57001B5B05 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = FF5C86B62262DE57001B5B05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF5C86B92262DE57001B5B05 /* libLottie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLottie.a;
+			remoteRef = FF5C86B82262DE57001B5B05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF92749F22A0D9F7005BC074 /* libbrinicle_kernel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_kernel.a;
+			remoteRef = FF92749E22A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF9274A122A0D9F7005BC074 /* libbrinicle_glue.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_glue.a;
+			remoteRef = FF9274A022A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF9274A322A0D9F7005BC074 /* libbrinicle_thread.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_thread.a;
+			remoteRef = FF9274A222A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF9274A522A0D9F7005BC074 /* libbrinicle_react.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_react.a;
+			remoteRef = FF9274A422A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF9274A722A0D9F7005BC074 /* libbrinicle_AUv2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_AUv2.a;
+			remoteRef = FF9274A622A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF9274A922A0D9F7005BC074 /* libbrinicle_AUv3.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbrinicle_AUv3.a;
+			remoteRef = FF9274A822A0D9F7005BC074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF99AE8E1E62505A00B0310F /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = FF99AE8D1E62505A00B0310F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF99AEE11E62519F00B0310F /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = FF99AEE01E62519F00B0310F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF99AEE71E6251B800B0310F /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = FF99AEE61E6251B800B0310F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF99AEF31E6251F900B0310F /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = FF99AEF21E6251F900B0310F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFD266FC226305940013BD74 /* libLottie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLottie.a;
+			remoteRef = FFD266FB226305940013BD74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C2B224C5F070040E90A /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = FFF33C2A224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C2E224C5F070040E90A /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = FFF33C2D224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C33224C5F070040E90A /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = FFF33C32224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C35224C5F070040E90A /* libfishhook.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfishhook.a;
+			remoteRef = FFF33C34224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C37224C5F070040E90A /* libfishhook-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfishhook-tvOS.a";
+			remoteRef = FFF33C36224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C48224C5F070040E90A /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = FFF33C47224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C4A224C5F070040E90A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = FFF33C49224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C4C224C5F070040E90A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = FFF33C4B224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C4E224C5F070040E90A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = FFF33C4D224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C50224C5F070040E90A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = FFF33C4F224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C52224C5F070040E90A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = FFF33C51224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C54224C5F070040E90A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = FFF33C53224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C56224C5F070040E90A /* libjsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsinspector.a;
+			remoteRef = FFF33C55224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C58224C5F070040E90A /* libjsinspector-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsinspector-tvOS.a";
+			remoteRef = FFF33C57224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C5A224C5F070040E90A /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = FFF33C59224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C5C224C5F070040E90A /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = FFF33C5B224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C5E224C5F070040E90A /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = FFF33C5D224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C60224C5F070040E90A /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = FFF33C5F224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C62224C5F070040E90A /* libprivatedata.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprivatedata.a;
+			remoteRef = FFF33C61224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF33C64224C5F070040E90A /* libprivatedata-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprivatedata-tvOS.a";
+			remoteRef = FFF33C63224C5F070040E90A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF99AF041E6253DF00B0310F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5F09E92252EED500BFDDD1 /* drumLoop.caf in Resources */,
+				FF99AF121E6253DF00B0310F /* Assets.xcassets in Resources */,
+				FF99AF151E6253DF00B0310F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF1D1E6253F300B0310F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD26712226312E40013BD74 /* bundle in Resources */,
+				FFD981651E6275B5004F792A /* $PROJ_NAME$_AudioUnitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FFD26713226313ED0013BD74 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\n  source ~/.profile\n  npm run bundle\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF8FC8D91E6385E8002460FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDADC891E74EC6100B8F23B /* v2exports.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF021E6253DF00B0310F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF99AF101E6253DF00B0310F /* ViewController.mm in Sources */,
+				FF99AF0D1E6253DF00B0310F /* main.m in Sources */,
+				FF99AF0A1E6253DF00B0310F /* AppDelegate.m in Sources */,
+				FF99AF571E62717C00B0310F /* playEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF99AF1A1E6253F300B0310F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF99AF2D1E62540C00B0310F /* dummy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF224A9E2291AFD1005D33D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF99AEFC1E62526B00B0310F /* $PROJ_NAME$Rust */;
+			targetProxy = FF224A9D2291AFD1005D33D4 /* PBXContainerItemProxy */;
+		};
+		FF8FC8E41E638659002460FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF99AF1E1E6253F300B0310F /* $PROJ_NAME$Base */;
+			targetProxy = FF8FC8E31E638659002460FE /* PBXContainerItemProxy */;
+		};
+		FF99AF251E6253F300B0310F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF99AF1E1E6253F300B0310F /* $PROJ_NAME$Base */;
+			targetProxy = FF99AF241E6253F300B0310F /* PBXContainerItemProxy */;
+		};
+		FFE713D722911C8900877426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = FFE713D622911C8900877426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF99AF131E6253DF00B0310F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF99AF141E6253DF00B0310F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8FC8E11E6385E8002460FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = $PROJ_NAME$AUv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$AU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = (
+					/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers,
+					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		FF8FC8E21E6385E8002460FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXPORTED_SYMBOLS_FILE = $PROJ_NAME$AUv2/$PROJ_NAME$v2.exp;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = $PROJ_NAME$AUv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$AU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = (
+					/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers,
+					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		FF99AE871E62503000B0310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				WARNING_CFLAGS = (
+					"-Wnon-virtual-dtor",
+					"-Wshadow",
+					"-Wextra",
+					"-Wall",
+					"-pedantic",
+					"-Wno-semicolon-before-method-body",
+				);
+			};
+			name = Debug;
+		};
+		FF99AE881E62503000B0310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				WARNING_CFLAGS = (
+					"-Wnon-virtual-dtor",
+					"-Wshadow",
+					"-Wextra",
+					"-Wall",
+					"-pedantic",
+					"-Wno-semicolon-before-method-body",
+				);
+			};
+			name = Release;
+		};
+		FF99AEFE1E62526B00B0310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF99AEFF1E62526B00B0310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF99AF181E6253DF00B0310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = $PROJ_NAME$TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJ_NAME$TestApp/$PROJ_NAME$TestApp-Bridging-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF99AF191E6253DF00B0310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = $PROJ_NAME$TestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJ_NAME$TestApp/$PROJ_NAME$TestApp-Bridging-header.h";
+			};
+			name = Release;
+		};
+		FF99AF291E6253F300B0310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$PROJ_NAME$Base/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"../rust/target/universal/${CONFIGURATION}/lib$PROJ_NAME$_glue.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$BaseF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF99AF2A1E6253F300B0310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$PROJ_NAME$Base/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"../rust/target/universal/${CONFIGURATION}/lib$PROJ_NAME$_glue.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = $IDENT$.$PROJ_NAME$BaseF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF8FC8E01E6385E8002460FE /* Build configuration list for PBXNativeTarget "$PROJ_NAME$AU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8FC8E11E6385E8002460FE /* Debug */,
+				FF8FC8E21E6385E8002460FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF99AE861E62503000B0310F /* Build configuration list for PBXProject "$PROJ_NAME$" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF99AE871E62503000B0310F /* Debug */,
+				FF99AE881E62503000B0310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF99AEFD1E62526B00B0310F /* Build configuration list for PBXLegacyTarget "$PROJ_NAME$Rust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF99AEFE1E62526B00B0310F /* Debug */,
+				FF99AEFF1E62526B00B0310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF99AF171E6253DF00B0310F /* Build configuration list for PBXNativeTarget "$PROJ_NAME$TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF99AF181E6253DF00B0310F /* Debug */,
+				FF99AF191E6253DF00B0310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF99AF281E6253F300B0310F /* Build configuration list for PBXNativeTarget "$PROJ_NAME$Base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF99AF291E6253F300B0310F /* Debug */,
+				FF99AF2A1E6253F300B0310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF99AE831E62503000B0310F /* Project object */;
+}

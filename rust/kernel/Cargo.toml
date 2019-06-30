@@ -1,0 +1,10 @@
+[package]
+name = "brinicle_kernel"
+version = "1.0.0"
+authors = ["Russell McClellan <russell.mcclellan@gmail.com>"]
+license = "MIT"
+edition = "2018"
+
+[dependencies.brinicle_deinterleaved]
+path = "../deinterleaved"
+version = "1.0.0"

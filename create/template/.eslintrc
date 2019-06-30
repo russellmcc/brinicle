@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "react",
+    "react-native",
+    "flowtype"
+  ],
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "plugin:flowtype/recommended",
+    "plugin:react-native/all"
+  ],
+  "rules": {
+    "no-undef": "error"
+  }
+}

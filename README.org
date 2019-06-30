@@ -1,0 +1,22 @@
+* What is this?
+Brinicle is a proof-of-concept, polyglot framework for creating audio effect plug-ins.  Audio processing is written in [[https://www.rust-lang.org][rust]], and the user interface is written in javascript using [[https://facebook.github.io/react-native/][react-native]].  Currently the only supported format is audio units v2, but many of the concepts could be generalized to other formats.
+* Is this ready for production use?
+Probably not without serious investment - this is just a proof of concept framework to explore what's possible.
+* Why do something like this?
+This was done for a few reasons - first, so that I could personally learn more about the technologies involved, and also to dream about a more modern way to write audio software. Currently the vast majority of audio plug-ins are written in C++, using user-interface libraries that are quite a bit older than react-native.  Is the reactive approach a better one for writing audio software?  Is rust a better language for signal processing than C++?  The idea of creating this proof-of-conecpt was to begin to answer these questions.
+* How do I create a brinicle project?
+Brinicle comes with scaffolding script called ~create-brinicle~.  You can create your brinicle project by calling ~npx create-brinicle~.  You will be prompted for some relevant information.
+
+Then, to build your project, open the xcode project in the ~mac~ folder.  To get started, build the target called ~<project name>TestApp~.  This will build a stand-alone application where you can test your effect before running a plug-in build.  *It is critical that you disable parallelize builds* from the scheme options in xcode - this is required to build any react-native project due to some configuration choices made upstream.  Sometimes the first build will fail building underlying react libraries; if this happens please try again and it may succeed next time.
+
+If you did everything right, it should look something like this:
+
+#+CAPTION: example
+#+NAME: example.png
+[[./example.png]]
+
+To build a plug-in, build the target named ~<project name>AU~.  In most hosts, due to sandboxing, you'll only be able to run the release build inside the host.
+* How do I edit the UI code?
+The user interface code is written in javascript, and the entry point is in ~mac/index.mac.js~.
+* How do I edit the signal processing code?
+The signal processing code is written in rust, and the entry point is ~rust/kernel/src/lib.js~

@@ -1,0 +1,1 @@
+#define OBJC_PREFIX $PROJ_NAME$

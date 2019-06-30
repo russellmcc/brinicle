@@ -1,0 +1,9 @@
+[package]
+name = "brinicle_deinterleaved"
+version = "1.0.0"
+authors = ["Russell McClellan <russell.mcclellan@gmail.com>"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+smallvec = "0.6"

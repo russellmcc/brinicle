@@ -1,0 +1,18 @@
+{
+  "name": "brinicle",
+  "version": "1.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Russell McClellan <russell.mcclellan@gmail.com>",
+  "main": "js/index.js",
+  "scripts": {
+    "prepare": "babel srcjs --out-dir js"
+  },
+  "peerDependencies": {
+    "react-native-macos": "russellmcc/react-native-macos#handle-view-coordinates"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-native": "^4.0.1"
+  }
+}

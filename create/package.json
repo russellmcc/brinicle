@@ -1,0 +1,12 @@
+{
+  "bin": {
+    "create-brinicle": "./index.js"
+  },
+  "name": "create-brinicle",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "enquirer": "^2.3.0",
+    "yargs": "^13.2.4"
+  }
+}

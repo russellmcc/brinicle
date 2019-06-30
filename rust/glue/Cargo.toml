@@ -1,0 +1,14 @@
+[package]
+authors = ["Russell McClellan <russell.mcclellan@gmail.com>"]
+name = "brinicle_glue"
+license = "MIT"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]
+libc = "*"
+smallvec = "*"
+
+[dependencies.brinicle_kernel]
+path = "../kernel"
+version = "1.0.0"
