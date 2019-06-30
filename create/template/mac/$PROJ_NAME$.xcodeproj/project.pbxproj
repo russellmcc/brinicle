@@ -380,7 +380,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../../lottie-react-native-macos/src/macos/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
+		FF5AB2B4226389B8007632D6 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "node_modules/lottie-react-native-macos/src/macos/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		FF5C86AB2262DE57001B5B05 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
 		FF5F09E82252EED500BFDDD1 /* drumLoop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = drumLoop.caf; path = ../resources/drumLoop.caf; sourceTree = "<group>"; };
 		FF8FC8DD1E6385E8002460FE /* $PROJ_NAME$AU.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = $PROJ_NAME$AU.component; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1090,7 +1090,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\n  source ~/.profile\n  npm run bundle\nfi\n";
+			shellScript = "mkdir -p bundle\nif [ \"$CONFIGURATION\" = \"Release\" ]; then\n  source ~/.profile\n  npm run bundle\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
