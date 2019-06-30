@@ -1,10 +1,13 @@
 {
   "name": "brinicle",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.0-alpha0",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Russell McClellan <russell.mcclellan@gmail.com>",
   "main": "js/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/russellmcc/brinicle"
+  },
   "scripts": {
     "prepare": "babel srcjs --out-dir js"
   },
