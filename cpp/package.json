@@ -1,6 +1,6 @@
 {
   "name": "brinicle",
-  "version": "1.0.0-alpha0",
+  "version": "1.0.0",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Russell McClellan <russell.mcclellan@gmail.com>",
   "main": "js/index.js",

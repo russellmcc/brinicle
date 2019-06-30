@@ -9,7 +9,7 @@
   "dependencies": {
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-preset-react-native": "^4.0.1",
-    "brinicle": "1.0.0-alpha0",
+    "brinicle": "^1.0.0",
     "lottie-ios": "^2.5.0",
     "lottie-react-native-macos": "russellmcc/lottie-react-native-macos#master",
     "react": "^16.2.0",

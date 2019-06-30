@@ -7,8 +7,7 @@ edition = "2018"
 enum_primitive = "*"
 itertools = "0.4.4"
 lazy_static = "1.3.0"
+brinicle_kernel = "1.0"
 
-[dependencies.brinicle_kernel]
-path = "../../../icicle-basics/rust/kernel"
 
 
