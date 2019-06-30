@@ -4,6 +4,8 @@ version = "1.0.0"
 authors = ["Russell McClellan <russell.mcclellan@gmail.com>"]
 license = "MIT"
 edition = "2018"
+repository = "https://github.com/russellmcc/brinicle"
+description = "Vocabulary type for signal procesors in brinicle."
 
 [dependencies.brinicle_deinterleaved]
 path = "../deinterleaved"

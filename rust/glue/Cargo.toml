@@ -4,10 +4,12 @@ name = "brinicle_glue"
 license = "MIT"
 version = "1.0.0"
 edition = "2018"
+repository = "https://github.com/russellmcc/brinicle"
+description = "Code for gluing brinicle rust projects to C."
 
 [dependencies]
-libc = "*"
-smallvec = "*"
+libc = "0.2"
+smallvec = "0.6"
 
 [dependencies.brinicle_kernel]
 path = "../kernel"

@@ -4,8 +4,8 @@ version = "1.0.0"
 edition = "2018"
 
 [dependencies]
-libc = "*"
-smallvec = "*"
+libc = "0.2"
+smallvec = "0.6"
 
 [dependencies.brinicle_glue]
 path = "../../../icicle-basics/rust/glue"

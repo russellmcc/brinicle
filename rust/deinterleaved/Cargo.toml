@@ -4,6 +4,8 @@ version = "1.0.0"
 authors = ["Russell McClellan <russell.mcclellan@gmail.com>"]
 license = "MIT"
 edition = "2018"
+repository = "https://github.com/russellmcc/brinicle"
+description = "Vocabulary types for de-interleaved audio as used in brinicle."
 
 [dependencies]
 smallvec = "0.6"
