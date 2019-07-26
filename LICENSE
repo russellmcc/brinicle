@@ -3,5 +3,5 @@ This repository contains source code under various open source licenses.
 The ~rust~ folder consists of several rust packages, each with licenses
 documented in their manifest.
 
-Other folders have a ~LICENSE` file describing the licensing of code in
+Other folders have a ~LICENSE~ file describing the licensing of code in
 that folder.
